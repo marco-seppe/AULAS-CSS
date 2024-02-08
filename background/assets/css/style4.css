@@ -1,0 +1,10 @@
+.exemplo {
+    width: 300px;
+    height: 300px;
+    border: solid red;
+    background-color: palevioletred;
+    background-image: url(../images/cogumelosbig.webp);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: bottom 50px right 20px;
+}

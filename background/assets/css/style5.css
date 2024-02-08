@@ -1,0 +1,32 @@
+
+
+.exemplo2 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    background-image: url(../images/cogumelosbig.webp);
+    background-size: cover;
+    overflow: auto;
+    background-attachment: fixed;
+}
+
+.exemplo3 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    background-image: url(../images/cogumelosbig.webp);
+    background-size: cover;
+    overflow: auto;
+    background-attachment: scroll;
+}
+
+.exemplo4 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    background-image: url(../images/cogumelosbig.webp);
+    background-size: cover;
+    overflow: auto;
+    background-attachment: local;
+    background-size: 600px;
+}

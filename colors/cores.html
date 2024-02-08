@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        #pre-definidas {
+            color: coral;
+        }
+
+        #current-color {
+            color: red;
+            border: 2px solid currentColor
+        }
+
+        #rgb {
+            color: rgb(255, 233, 100);
+        }
+
+        #rgba {
+            color: rgb(0, 200, 100, 0.8);
+        }
+
+        #hex {
+            color: #ff0000;
+        }
+
+        #hex-transparencia {
+            color: #ff0000b7;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Existem várias formas de definirmos cores utilizando o CSS. Elas são:</p>
+    <ul>
+        <li id="pre-definidas">Cores pré-definidas: são cores já existente reconhecidas por nome pelo navegador. São cerca de 140 cores pré-definidas. Lista de cores: <a target="_blank" href="https://www.w3schools.com/cssref/css_colors.php">https://www.w3schools.com/cssref/css_colors.php</a></li>  
+        <li id="current-color">Palavra-chave "currentcolor": esta palavra reservada utiliza a mesma cor já utilizada no elemento.</li>
+        <li id="hex">Hexadecimal:  Representado por # seguido de seis dígitos, no qual os dois primeiros representam a intensidade da cor vermelha, o segundo par da cor azul, e o terceiro par da cor verde. os valores variam de 0 a 9 e de A a F.</li>
+        <li id="hex-transparencia">Hexadecimal com transparência: para adicionar transparÇencia, se adicionam mais dois valores no fim do código da cor.</li>
+        <li id="rgb">RGB: RED, GREEN, BLUE. O código se escreve <code>rgb(255, 255, 255);</code> com valores entre 0 e 255, sendo eles representantes da quantidade de cada umas das cores, respectivamente, que formará a cor desejada.</li>
+        <li id="rgba">RGBA: igual ao RGB, porém tem o canal ALFA que determina o nível de transparência da cor. Os valores variam entre 0 e 1.</li>
+    </ul><hr>
+
+    <h2>HSL</h2>
+    <p><code>hsl(hue, saturation, lightness)</code></p>
+    <ul>
+        <li>Hue (matiz): é o grau na roda de cores (de 0 a 360 graus)</li>
+            <ul>
+                <li>0 ou 360 é vermelho</li>
+                <li>120 é verde</li>
+                <li>240 é azul</li>
+            </ul>
+        <li>Saturation (saturação): valor percentual</li>
+            <ul>
+                <li>0% um tom de cinza</li>
+                <li>100% cor total</li>
+            </ul>
+        <li>Lightness (luminosidade): luminosidade da cor</li>
+        <ul>
+            <li>0% é preto</li>
+            <li>100% é branco</li>
+        </ul>
+    </ul>
+
+
+</body>
+</html>

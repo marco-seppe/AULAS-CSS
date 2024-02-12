@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+</head>
+<style>
+    body {
+        font-family: Roboto, sans-serif;
+    }
+
+    .exemplo {
+        background-color: palevioletred;
+        width: 200px;
+        height: 200px;
+        border-style: solid;
+        border-width: 5px 10px 20px 40px;
+        border-color: red;    
+    }
+
+    .exemplo2 {
+        background-color: palevioletred;
+        width: 200px;
+        height: 200px;
+        border-width: 5px;
+        border-style: dashed;
+    }
+
+    .exemplo3 {
+        background-color: palevioletred;
+        width: 200px;
+        height: 200px;
+        border-width: 15px;
+        border-style: solid;
+        border-color: black green blue red;
+    }
+
+    .exemplo4 {
+        background-color: palevioletred;
+        width: 200px;
+        height: 200px;
+        border-top: solid 10px red;
+        border-left: dotted 5px blue;
+        border-right: dashed 15px black;
+        border-bottom: groove 10px green;
+    }
+    .exemplo5 {
+        background-image: url(./assets/cogumelosbig.webp);
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        border: solid palevioletred 5px;
+        border-radius: 50%;
+    }
+
+</style>
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações das nossas bordas através das propriedades:</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <div class="exemplo"></div>
+
+    <h2>Exemplo 2: <code>border-style </code> - pode ser solid, dashed, dotted, double, groove, ridge, inset, outset. Pode ser aplicada borda mista, inserindo mais de um valor na mesma linha de código. </h2>
+    <p>ATENÇÃO para a sequencia dos lados que o html considera como order, quando há mais de um valor para a propriedade (cor, tipo de borda, etc.)</p>
+    
+    <div class="exemplo2"></div>
+
+    <h2>Exemplo 3: <code>border-color</code></h2>
+    <p>A ordem do HTML para mais de um valor na propriedade é:</p>
+    <ul>
+        <li>1 valor: top, bottom, left, rigth</li>
+        <li>2 valores: top, bottom // left, rigth</li>
+        <li>3 valores: top // left, rigth // bottom</li>
+        <li>4 valores: top // rigth // bottom // left</li>
+    </ul>
+    <div class="exemplo3"></div>
+
+    <h2>Exemplo 4:</h2>
+    <p>É possível utilizar apenas a propriedade border OU border-top(left, rigth, bottom) para escrever as propriedades, todas na mesma linha.</p>
+    <div class="exemplo4"></div>
+
+    <h2>Exemplo 5: <code>border-radius</code></h2>
+    <p>Serve para arredondar os cantos da borda. Pode receber também até 4 valores. Usando porcentagem, pode-se criar círculos perfeitos ou ovais.</p>
+    <div class="exemplo5"></div>
+
+</body>
+</html>

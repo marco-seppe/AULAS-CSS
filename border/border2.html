@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-image</title>
+</head>
+<style>
+    * {
+        font-family: sans-serif;
+    }
+
+    .exemplo {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        border: 50px solid;
+        margin: 50px auto;
+    }
+
+    #exemplo1{
+        border-image-source: url(./assets/border.svg);
+        border-image-slice: 100;
+        border-image-repeat: repeat;
+        border-image-outset: 50px 20px 15px 60px;
+    }
+
+    #exemplo2{
+        border-image-source: linear-gradient(red, blue);
+        border-image-slice: 10;
+    }
+
+    #exemplo3{
+        border-image-source: url(./assets/border.svg);
+        border-image-slice: 100;
+        border-image-repeat: repeat;
+        border-image-width: 30px 10px 40px 50px;
+    }
+
+    #exemplo4{
+        border-image-source: url(./assets/border.svg);
+        border-image-slice: 100;
+        border-image-repeat: space;
+        border-image-width: 40px;
+    }
+
+</style>
+
+<body>
+    <h1>Bordas com Imagens</h1>
+    <p>Os valores podem ser escritos em linha na propriedade, como: <code>border-image: url() slice / width / outset / repeat </code></p>
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+    <h2>Exemplo:</h2>
+
+    <div class="exemplo" id="exemplo1"></div><br>
+    <div class="exemplo" id="exemplo2"></div><br>
+    <div class="exemplo" id="exemplo3"></div><br>
+
+    <p>Aceita os valores: repeat, stretch, round, space</p>
+    <div class="exemplo" id="exemplo4"></div><br>
+        
+
+</body>
+</html>

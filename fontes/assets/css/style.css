@@ -1,0 +1,32 @@
+@import url(./global.css);
+
+p {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 20px;
+    font-style: italic;
+} 
+
+li {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: small;
+}
+
+#exemplo1 {
+    font-variant: small-caps;
+}
+
+#exemplo2{
+    font-stretch: extra-condensed;
+}
+#exemplo3{
+    line-height: 200%;
+}
+
+#exemplo4 {
+    font: Arial 60px bolder;
+}
+
+/* as palavras-chave para a propriedade font-size variam de tamanho dependendo do padrão do usuário. */
+

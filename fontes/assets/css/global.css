@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+/* Código para usar a fonte em todo o projeto */
+
+* {
+    font-family: sans-serif, "Times New Roman", "Arial";
+} 
+
+
+/* Código para importar fonte externa, que no caso está salva na propria pasta do projeto */
+@font-face {
+    font-family: Roboto;
+    src: local(), url("../fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(), url("../fonts/Roboto-Black.ttf");
+    font-weight: bold;
+}
+/* o valor "local()" da propriedade font-face, faz com que o navegador busque a fonte indicada no computador do usuário. Caso não encontre, seguirá o fall-back definido" */
+

@@ -1,0 +1,44 @@
+#text-transform {
+    text-transform: lowercase;
+}
+
+#text-align {
+    padding: 10px;
+    background-color: lavender;
+}
+
+.exemplo1 {
+    width: 370px;
+    border: 1px solid black;
+    background-color: lavender;
+    text-align: justify;
+    padding: 10px;
+}
+
+#text1 {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: blue;
+}
+
+#text2 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+}
+
+#text3 {
+    text-decoration-line: underline;
+}
+
+#text4 {
+    text-decoration: underline wavy red 1px;
+}
+
+#text-ident {
+    text-indent: 100px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+

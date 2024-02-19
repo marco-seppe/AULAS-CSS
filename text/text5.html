@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade text-overflow</title>
+    <style>
+        .exemplo {
+            width: 200px;
+            color: black;
+            background-color: chartreuse;
+        }
+
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #clip {
+            text-overflow: clip;
+        }
+
+        #ellipsis {
+            text-overflow: ellipsis;
+        }
+
+        #string {
+            text-overflow: 'string';
+        }
+        /* a propriedade com valor string só funciona no Firefox */
+
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>text-overflow</code></h1>
+    <p>Define a orientação do texto (vertical ou horizontal).</p>
+    <em>Exemplo: </em>
+
+    <code>text-overflow: clip;</code>
+    <p id="clip"  class="exemplo">Chega de saudade
+        A realidade é que sem ela não há paz</p>
+
+    <code>text-overflow: ellipsis;</code>
+    <p id="ellipsis" class="exemplo">Chega de saudade
+        A realidade é que sem ela não há paz</p>
+
+    <code>text-overflow: string;</code>
+    <p id="string" class="exemplo">Chega de saudade
+        A realidade é que sem ela não há paz</p>
+
+</body>
+</html>

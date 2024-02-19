@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 10px solid brown;
+            margin: 20px auto;
+            background-color: salmon;
+
+            box-shadow: 30px 30px 10px -10px rgb(121, 31, 31), inset 20px 20px 20px 5px grey;
+        }
+
+        img {
+            filter: drop-shadow(10px 10px 5px gray);
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>box-shadow</code></h1>
+
+    <div></div><br><br><br>
+
+
+    <img src="./assets/images/pattern.svg" width="400px">
+</body>
+</html>

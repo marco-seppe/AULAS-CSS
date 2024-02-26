@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento elementos inline</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        .exemplo {
+            background-color: palevioletred;
+        }
+
+        #item-01 {
+            height: 50px;
+            /* vertical-align: top; */
+            /* vertical-align: bottom; */
+            vertical-align: middle;
+        }
+
+        #item-02 {
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .container {
+            border: 1px solid red;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Alinhamento elementos inline</h1>
+
+    <div class="container">
+        <img id="item-01" src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg?w=740&t=st=1708891925~exp=1708892525~hmac=a56185012c219ae175432affbe760e60f7045ba98dd1b3e47d2744251305e642">
+        <span id="item-02" class="exemplo">Item 02</span>
+        <span id="item-03" class="exemplo">Item 03</span>
+    </div>
+
+    <p>A propriedade aceita as palavras chave: middle, baseline, text-bottom, text-top, super, sub, entre outras.</p>
+
+</body>
+</html>

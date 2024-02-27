@@ -1,0 +1,22 @@
+.container {
+    background-color: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 200px;
+
+    display: flex;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+.item {
+    padding: 8px;
+    background: yellow;
+    flex-grow: 1;
+}
+
+.item-02 {
+    /* max-width: 30px; */
+    flex-grow: 3;
+}

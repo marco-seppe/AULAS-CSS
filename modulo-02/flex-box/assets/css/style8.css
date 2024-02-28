@@ -1,0 +1,36 @@
+.container {
+    background-color: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.item {
+    background: yellow;
+    text-align: center;
+    /* flex: 1 1 auto; */
+    /* flex: initial; */   /* flex: 0 1 auto; */
+    /* flex: auto; */       /* flex: 1 1 auto; */
+    /* flex: none; */         /* flex: 0 0 auto; */
+     flex: 1;             /* flex: 1 1 0; */
+
+
+}
+
+.item-02 {
+    /* flex: 2; */ /* flex: 2 1 0; */
+    /* flex: 20px; */  /* flex: 1 1 20px */
+    /* flex: 0 50%; /* flex: 0 1 50% */
+    /* align-self: center; */
+
+} 
+
+#container-1 {
+    flex-direction: column;
+}

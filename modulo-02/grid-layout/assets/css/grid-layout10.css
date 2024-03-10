@@ -1,0 +1,88 @@
+body {
+    display: grid;
+    border: 3px solid;
+    height: 80vh;
+    grid-template: repeat(3, 1fr) / repeat(3, auto);
+
+    /* gap: 15px; */
+
+    /* justify-items: stretch; */
+    /* justify-items: start; */
+    /* justify-items: end; */
+    /* justify-items: center; */
+
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: center; */
+
+    /* place-items: start end; */
+    place-items: center;
+
+    /* a propriedade place-items é shorthand da justify-items e align-items */
+
+
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: stretch; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    /* align-content: start; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+    /* align-content: end; */
+    /* align-content: stretch; */
+    /* align-content: space-between; */
+
+
+    /* place-content: stretch; */
+
+    /* a propriedade place-content é shorthand da justify-content e align-content */
+
+}
+
+.item-01 {
+    background: palegoldenrod ;
+}
+
+.item-02 {
+    background: paleturquoise;
+}
+
+.item-03 {
+    background: palegreen;
+}
+
+.item-04 {
+    background: palevioletred;
+}
+
+.item-05 {
+    background: mediumseagreen;
+    /* justify-self: start; */
+    /* align-self: end; */
+
+    place-self: end start;
+
+    /* A propriedade place-self é shorthand das justify-self e align-self. */
+
+}
+
+.item-06 {
+    background: purple;
+}
+
+.item-07 {
+    background: lightgreen;
+}
+
+.item-08 {
+    background: lightgoldenrodyellow;
+}
+
+.item-09 {
+    background: lightcyan;
+}

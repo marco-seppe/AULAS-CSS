@@ -1,0 +1,50 @@
+body  {
+    display: grid;
+    border: 3px solid;
+    grid-template: repeat(3, 200px) / repeat(3, 1fr);
+
+    /* row-gap: 10px;
+    column-gap: 20px; */
+
+    gap: 10px 15px;
+}
+
+.item-01 {
+    background: palegoldenrod;
+}
+
+.item-02 {
+    background: paleturquoise;
+}
+
+.item-03 {
+    background: palegreen;
+}
+
+.item-04 {
+    background: palevioletred;
+}
+
+.item-05 {
+    background: lightseagreen;
+}
+
+.item-06 {
+    background: slateblue;
+}
+
+.item-07 {
+    background: lightgreen;
+}
+
+.item-08 {
+    background: lightgoldenrodyellow;   
+}
+
+.item-09 {
+    background: lightsteelblue;
+}
+
+
+
+

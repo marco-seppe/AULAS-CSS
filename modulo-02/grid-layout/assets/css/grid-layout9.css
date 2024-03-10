@@ -1,0 +1,95 @@
+/* Antes */
+
+.container {
+    grid-template-rows: 100px 300px;
+    grid-template-columns: 3fr 1fr;
+}
+
+/* Depois */
+
+.container {
+    grid: 100px 300px / 3fr 1fr;
+}
+
+
+
+
+/* Antes */
+
+.container {
+    grid-auto-flow: row;
+    grid-template-columns: 200px 1fr;
+}
+
+/* Depois */
+
+.container {
+    grid: autoflow / 200px 1fr;
+}
+
+
+/* Antes */
+
+.container {
+    grid-auto-flow: row dense;
+    grid-auto-rows: 100px;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Depois */
+
+.container {
+    grid: auto-flow dense 100px / 1fr 2fr;
+}
+
+
+
+
+/* Antes */
+
+.container {
+    grid-template-rows: 100px 300px;
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;
+}
+
+/* Depois */
+
+.container {
+    grid: 100px 300px / autoflow 200px;
+}
+
+
+/* Antes */
+
+.container {
+    grid-template-areas:
+        "header header header"
+        "footer footer footer";
+    grid-template-rows: 1fr 25px;
+    grid-template-columns: auto 50px auto;
+}
+
+/* Depois */
+
+.container {
+    grid:
+        "header header header" 1fr
+        "footer footer footer" 25px
+        / auto 50px auto;    
+}
+
+
+
+
+/* Gera uma linha com 100px de altura e 2 colunas com 1fr. */
+
+    grid: 100px / 1fr 1fr;
+/* 
+Gera uma linha com 100px de altura. O grid-auto-flow é definido como column
+(pois está logo antes da definição das colunas). Ele também define o grid-auto-columns com 100px 50px */
+
+    grid 100px / autoflow 100px 50px
+
+
+

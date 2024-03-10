@@ -1,0 +1,110 @@
+.container {
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+
+}
+
+.item-a {
+    text-align: center;
+    background-color: orange;
+    
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item-b {
+    text-align: center;
+    background-color: aqua;
+
+    /* grid-column-start: 1;
+    grid-column-end: span 3; */
+    grid-column: 1 / span 3;
+
+    /* grid-row-start: 2;
+    grid-row-end: span 2; */
+    grid-row: 2 / span 2;
+
+
+}
+
+.container-2 {
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 150px);
+
+}
+
+.item-2 {
+    text-align: center;
+    background-color: deeppink;
+}
+
+.selected {
+    background-color: aqua;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.container-3 {
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+
+}
+
+.item-3 {
+    text-align: center;
+    background-color: deeppink;
+}
+
+.selected-3 {
+    background-color: aqua;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.container-4 {
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
+    grid-template-rows: [linha-inicio] 100px [linha-meio] 100px [linha-fim];
+
+}
+
+.item-4 {
+    text-align: center;
+    background-color: deeppink;
+}
+
+.selected-4 {
+    background-color: aqua;
+    grid-area: linha-meio / segunda-linha-col / linha-fim / terceira-linha-col;
+}
+
+/* grid-area */
+
+/* Antes */
+
+/* .item {
+    grid-column-start: segunda-linha-col;
+    grid-column-end: span 4;
+
+    grid-row-start: linha-dois;
+    grid-row-end: span-2;
+} */
+
+/* Depois */
+
+/* .item {
+    grid-area: linha-dois / segunda-linha-col / span 2 / span 4;
+}  */
+
+/* grid-area: <grid-row-start> / <grid-column-start> / <grid-row-end> / <grid-column-end> */
+ 

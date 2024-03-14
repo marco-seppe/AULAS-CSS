@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style5.css">
+</head>
+<body>
+    <h1>Estrutura das medias queries</h1>
+
+    <p>@media screen and (min-width: 320px) and (max-width: 768px) { h1 {color: red;} }
+    </p>
+<br><br>
+    <h3>@media (at-rule)</h3>
+    <p>Regra usada para identificar o tipo de mídia que uma página está sendo visualizada, informando os recursos que esse tipo de mídia suporta e os operadores que podem ser combinados para misturar algumas condições.</p>
+<br><br>
+    <h3>media type / tipo de mídia</h3>    
+    <p>Define o tipo de mídia que os estilos CSS devem ser aplicados.</p>
+    <p>all: corresponde a todos os dispositivos</p>
+    <p>print: corresponde a documentos que são uma pré-visualização de impressão, ou em qualquer mídia que será voltada para imprimir</p>
+    <p>screen: corresponde a dispositivos com telas integradas</p>
+    <p>speech: corresponde a dispositivos que leem o conteúdo de forma audível, como um leitor de tela, por exemplo</p>
+<br><br>
+    <h3>media features / mídia recursos</h3>
+    <p>configura com quais recursos de mídia se quer combinar para aplicar determinados estilos</p>
+    <p>min-width/min-weight/max-width/max-height/width/height: detecta a largura e altura da viewport;</p>
+    <p>orientation: detecta se o dispositivo está em modo retrato ou paisagem;</p>
+    <p>hover: indica que a página está sendo acessada através de um mecanismo de ponteiro, como um mouse;</p>
+    <p>pointer: detecta quão preciso é o ponteiro (grosso, fino, etc,) ajuda a detectar touchscreen, mouse, etc. (fine, coarse, none)</p>
+<br><br>
+    <h3>operators / operadores</h3>
+    <p>É possível combinar, através de operadores lógicos, as media features para atender as condições para aplicar os estilos</p>
+    <p>AND: deve atender a todas as media features (recursos de mídia);</p>
+    <p>OR: deve atender, no mínimo, uma das media features (recursos de mídia);</p>
+    <p>NOT: nega as condições aplicadas, invertendo todo o significado do media query.</p>
+</body>
+</html>

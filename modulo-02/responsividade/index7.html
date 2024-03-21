@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens responsivas</title>
+    <link rel="stylesheet" href="./assets/css/style7.css">
+    
+    <style>
+        .image-container {
+            border: 2px solid red;
+            height: 500px;
+            width: 100%;
+
+            background-image: url('./assets/images/logo-dio.jpeg')
+        }
+
+        @media screen and (max-width: 690px) {
+            .image-container {
+                background-image: url('./assets/images/cogumelos.jpg');
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        Responsividade em imagens
+    </h1>
+
+    <p>Temos algumas opções quando se trata de responsividade em imagens.</p>
+    <p>Uma opção é utilizar a propriedade <code>max-width: 100%</code>, que irá redimensionar a imagem automaticamente, de acordo com o width da tela do usuário.</p>
+    <p>Essa propriedade deve ser utilizada dentro da tag <code>igm {max-width: 100%;}, ou de forma correlata.</code></p>
+    <p>O <code>max-width</code> redimensiona ao máximo da largura da imagem, sendo ideal para imagens muito grandes, porém devemos ter cuidado ao usar em imagens pequenas.</p>
+    <p>Cuidado ao usar a propriedade <code>width: 100%</code>, pois ele não respeita a largura máxima da imagem e a faz perder qualidade (pixelado).</p> 
+    <br>
+    <p>Outra opção é utilizar media queries para carregar imagens de tamanhos diversos a depender da largura da tela.</p>
+
+    <!-- <picture>
+        <source srcset="assets/images/logo-dio.jpeg" media="(max-width: 680px)">
+        <source srcset="assets/images/cogumelos.jpg">
+        <img src="assets/images/cogumelos.jpg" alt="cogumelos teste">
+    </picture> -->
+
+    <div class="image-container">
+
+    </div>
+
+</body>
+</html>

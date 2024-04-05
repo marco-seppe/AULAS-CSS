@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <link rel="stylesheet" href="./assets/css/style1.css">
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <p>Usado para adicionar elementos extras na página, sem a necessidade de declará-lo ho HTML, ou para selecionar uma parte de algum elemento.</p>
+    <p>Identificado por <code>::palavra-chave</code></p>
+
+    <h2>Pseudo-elemento - <code>::first-letter</code></h2>
+    <p>Seleciona a primeira letra da primeira linha</p>
+    <p>Propriedades disponíveis</p>
+    <ul>
+        <li><code>color</code></li>
+        <li><code>background</code></li>
+        <li><code>margin</code></li>
+        <li><code>padding</code></li>
+        <li><code>border</code></li>
+        <li><code>font</code></li>
+        <li>Propriedades de texto</li>
+    </ul>
+    <br><br><br><br>
+
+    <h2>Pseudo-elemento - <code>::first-line</code></h2>
+    <p>Seleciona a primeira linha de um texto</p>
+    <p>Propriedades disponíveis:</p>
+    <ul>
+        <li><code>color</code></li>
+        <li><code>background</code></li>
+        <li><code>font</code></li>
+        <li>Propriedades de texto</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, tempora esse in vero tempore aperiam autem exercitationem id, dolorem suscipit quod explicabo, porro officia voluptate eveniet fugiat minus optio beatae.</p>
+    <br><br><br><br>
+
+    <h2>Pseudo-elemento - <code>::backdrop</code></h2>
+    <p>Estiliza o plano de fundo de elementos em modo de tela cheia, como <code>dialog</code> ou <code>video</code></p>
+
+    <br><br><br><br>
+
+    <h2>Pseudo-elemento - <code>::marker</code></h2>
+    <p>Permite estilizar os tópicos ou números de uma lista (li) ou então a flecha de um elemento <code>summary</code></p>
+
+    <details>
+        <summary>Propriedades aceitas</summary>
+    </details>
+    <ul>
+        <li>color</li>
+        <li>content</li>
+        <li>white-space</li>
+        <li>font</li>
+        <li>animation</li>
+        <li>transition</li>
+    </ul>
+    <br><br><br><br>
+
+    <h2>Pseudo-elemento - <code>::placeholder</code></h2>
+    <p>Um placeholder é uma dica para ajudar no preenchimento de algum campo de formulário.</p>
+    <details>
+        <summary>Propriedades aceitas</summary>
+    </details>
+    <ul>
+        <li>color</li>
+        <li>font</li>
+        <li>background</li>
+        <li>text</li>
+    </ul>
+
+    <hr>
+    <p>Exemplo:</p>
+    <label for="nome">Nome</label>
+    <input
+        name="nome"
+        type="text"
+        placeholder="Ex: Fulano de Tal"
+    >
+
+    <label for="senha">Senha</label>
+    <input
+        name="senha"
+        type="password"
+        placeholder="Mínimo de 10 caracteres"
+    >
+
+    <h2>Pseudoelemento - <code>::selection</code></h2>
+    <p>Permite estilizar a seleção de textos no navegador</p>
+    
+    <details>
+        <summary>Propriedades aceitas:</summary>
+    </details>
+    <ul>
+        <li>color</li>
+        <li>background-color</li>
+        <li>text</li>
+    </ul>
+    <hr>
+    <p class="ex-selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae enim laborum incidunt facere ea inventore veniam quos rem a ipsum, distinctio voluptatibus repellendus unde ullam repellat. Recusandae nobis praesentium natus.</p>
+    <p class="ex-selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facilis animi nemo exercitationem cupiditate, expedita quibusdam sint suscipit laudantium voluptate nesciunt amet corporis perspiciatis repudiandae veritatis sed officia numquam tempore.</p>
+
+    <br><br><br><br>
+
+    <h2>Pseudo-elemento - <code>::file-selector-button</code></h2>
+    <p>Permite estiliza a seleção de textos no navegador.</p>
+
+    <form>
+        <label for="fileUpload">Upload de arquivo</label>
+        <input name="fileUpload" type="file">
+    </form>
+
+    <br><br><br><br>
+
+    
+
+
+
+
+</body>
+</html>

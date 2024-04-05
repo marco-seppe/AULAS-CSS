@@ -1,0 +1,52 @@
+code {
+    background-color: lightgray;
+}
+
+p::first-letter {
+    /* color: red; */
+}
+
+::first-letter {
+    /* color: red; */
+    /* margin-right: 10px; */
+}
+
+p::first-line {
+    /* color: blue; */
+    /* background: lightblue; */
+    /* font-size: 2rem; */
+    /* text-decoration: line-through; */
+}
+
+video::backdrop {
+    background-color: blue;
+}
+
+summary::marker {
+    content: "X";
+    color: red;
+}
+
+li::marker {
+    color: blueviolet;
+    content: "--";
+}
+
+
+input::placeholder {
+    color: lightcoral;
+}
+
+.ex-selection::selection {
+    background-color: aquamarine;
+    color:blue;
+}
+
+input::file-selector-button {
+    border:2px solid red;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+

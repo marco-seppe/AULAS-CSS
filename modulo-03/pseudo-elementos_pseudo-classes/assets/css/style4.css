@@ -1,0 +1,28 @@
+button {
+    background-color: palevioletred;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+}
+
+button:hover {
+    background-color: palegreen;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: purple;
+    color: white;
+}
+
+a:active {
+    background-color: pink;
+    color: black;
+
+}
+
+h1:active {
+    background-color: greenyellow;
+}

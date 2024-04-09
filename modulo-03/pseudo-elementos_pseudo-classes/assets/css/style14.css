@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+article :first-child {
+    color: orange;
+}
+
+article :first-of-type {
+    font-weight: bold;
+}
+
+article p:first-of-type {
+    text-decoration: underline;
+}
+
+article .exemplo:first-of-type {
+    text-indent: 15px;
+}
+
+article p:last-of-type {
+    color: blue;
+}

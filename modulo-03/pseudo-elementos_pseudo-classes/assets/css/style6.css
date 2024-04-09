@@ -1,0 +1,9 @@
+p:target {
+    background-color: gold;
+}
+
+p:target::before {
+    content: "►";
+    color: red;
+    margin-right: 10px;
+}

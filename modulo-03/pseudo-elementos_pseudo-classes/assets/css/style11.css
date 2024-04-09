@@ -1,0 +1,38 @@
+* {
+    font-family: sans-serif;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 15px 50px 35px;
+    width: 250px;
+    background-color: gainsboro;
+
+    gap: 10px;
+}
+
+form input {
+    width: 150px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+input:required {
+    border-color: purple;
+}
+
+input:optional {
+    border-color: pink;
+}

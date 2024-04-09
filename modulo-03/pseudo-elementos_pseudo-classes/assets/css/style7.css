@@ -1,0 +1,18 @@
+button:disabled {
+    background-color: black;
+    color: yellow;
+}
+
+button:enabled {
+    background-color: palevioletred;
+    color: white;
+}
+
+.exemplo:link {
+    color: palegreen;
+    background-color: black;
+}
+
+a:visited {
+    color: yellow;
+}

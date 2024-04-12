@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247,247,247);
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    perspective: 300px;    
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    position: absolute;
+    background: #d53369;
+    
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    transition: background 1s linear, transform 1s ease-in-out 1s;
+}
+
+.box:hover {
+    background: gold;
+    transform: rotateX(40deg);
+}
+
+
+/* transition: <property> <duration> <timing-function> <delay> */
+
+/* time-function
+    ease - começa devagar, acelera, e termina devagar.
+    linear - velocidade linear do início ao fim.
+    ease-in - lento no início
+    ease-out - lento no final
+    ease-in-out - lento no início e no final (lento igual??)
+    cubic-buzier(n, n, n, n) - função personalizada, existem sites que calculam a função.
+     */

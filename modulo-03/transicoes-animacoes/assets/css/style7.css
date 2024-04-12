@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    position: absolute;
+    background: purple;
+    animation-name: change-background;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+    /* animation-delay: -2s; */
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+}
+
+/* @keyframes change-background {
+    from {
+        background: palegreen;
+    }
+    to {
+        background: purple;
+    }
+} */
+
+@keyframes change-background {
+    0% {
+        background: palegreen;
+        width: 200px;
+        height: 200px;
+    }
+    50% {
+        background: blue;
+        width: 500px;
+        height: 400px;
+    }
+    100% {
+        background: purple;
+        width: 100px;
+        height: 200px;
+
+
+    }
+}
+
+/* time-function
+    ease - começa devagar, acelera, e termina devagar.
+    linear - velocidade linear do início ao fim.
+    ease-in - lento no início
+    ease-out - lento no final
+    ease-in-out - lento no início e no final (lento igual??)
+    cubic-buzier(n, n, n, n) - função personalizada, existem sites que calculam a função.
+     */

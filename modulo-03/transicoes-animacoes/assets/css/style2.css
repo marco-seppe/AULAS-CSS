@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247,247,247);
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    perspective: 300px;
+    /* perspective-origin: left; */
+}
+
+/* .box {
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    transform: rotateY(30deg);
+
+} */
+
+.box {
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    /* transform: rotateX(20deg) rotateY(40deg) rotateZ(5deg);  */
+    /* transform: translateZ(200px); */
+
+    /* transform:rotateX(20deg); */
+    transition: 1s;
+    transform-origin: left top;
+}
+
+/* .box:hover {
+    transform: scaleZ(-5) rotateX(20deg);
+} */
+
+
+.box:hover {
+    transform: rotate(45deg);
+}
